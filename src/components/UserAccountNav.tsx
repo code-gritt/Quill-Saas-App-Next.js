@@ -12,7 +12,7 @@ import Image from "next/image";
 import { Icons } from "./Icons";
 import Link from "next/link";
 import { Gem } from "lucide-react";
-// import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/server";
+import { LogoutLink } from "@kinde-oss/kinde-auth-nextjs/server";
 
 interface UserAccountNavProps {
   email: string | undefined;
@@ -81,9 +81,9 @@ const UserAccountNav = async ({
 
         <DropdownMenuSeparator />
 
-        {/* <DropdownMenuItem className="cursor-pointer">
+        <DropdownMenuItem className="cursor-pointer">
           <LogoutLink>Log out</LogoutLink>
-        </DropdownMenuItem> */}
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
